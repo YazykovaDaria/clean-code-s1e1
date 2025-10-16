@@ -5,23 +5,23 @@ body {
   font-family: lato, sans-serif;
 }
 
-.aaa {
+.banner {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.banner img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.banner .banner__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-    .aaa {
+    .banner {
       text-align: center;
   }
 }
