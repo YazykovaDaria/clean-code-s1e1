@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Todo App</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet"
-      href="style.css"
-      media="screen"
-      charset="utf-8">
-  </head>
+<head>
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
 
-  <body class="body">
+<body class="body">
 
-    <div class="banner">
-      <img src="./eisenhower-matrix.jpg" class="banner__img">
-      <a class="banner__link"
-        href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
+  <header class="banner">
+    <img src="./eisenhower-matrix.jpg" class="banner__img">
+    <a class="banner__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  </header>
 
-    <div class="todo-list">
-      <p id="add-list">
+  <main class="todo-list">
+    <section>
+      <h1 class="hidden">Add todo</h1>
+      <div id="add-list">
         <label for="new-task" class="task__label">Add Item</label>
         <div class="task-row-wrapper">
-          <input id="new-task"
-            class="task input"
-            type="text">
+          <input id="new-task" class="task input" type="text">
           <button class="button">Add</button>
         </div>
-      </p>
+      </div>
+    </section>
 
-      <h3 class="title">Todo</h3>
+
+    <section>
+      <h2 class="title">Todo</h2>
 
       <ul id="incomplete">
         <li class="list__item">
@@ -45,17 +44,17 @@
         <li class="edit list__item">
           <input type="checkbox">
           <label class="task label">Go Shopping</label>
-          <input type="text"
-            value="go shopping"
-            class="task input">
+          <input type="text" value="go shopping" class="task input">
           <button class="edit button">Save</button>
           <button class="delete button">
             <img src="./remove.svg" class="button__img">
           </button>
         </li>
       </ul>
+    </section>
 
-      <h3 class="title">Completed</h3>
+    <section>
+      <h2 class="title">Completed</h2>
 
       <ul id="completed">
         <li class="list__item">
@@ -68,8 +67,10 @@
           </button>
         </li>
       </ul>
-    </div>
+    </section>
+  </main>
 
-    <script src="app.js"></script>
-  </body>
+  <script src="app.js"></script>
+</body>
+
 </html>

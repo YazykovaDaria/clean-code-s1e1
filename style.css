@@ -23,6 +23,18 @@ button {
   font-family: lato, sans-serif;
 }
 
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .banner {
   width: 500px;
   margin: 0 auto;
